@@ -34,8 +34,13 @@ const AppProvider = ({ children }) => {
         fetchMeals(randomMealURL);
     }
 
+    //fetch all meals data on first render
     useEffect(()=>{
-        
+        fetchMeals(allMealsURL)
+    },[])
+
+    useEffect(() => {
+        if(!searchTerm) return
         fetchMeals(`${allMealsURL}${searchTerm}`)
     },[searchTerm])
 
