@@ -14,9 +14,14 @@ const AppProvider = ({ children }) => {
     const fetchMeals = async (url) => {
         setLoading(true);
         try{
-            const response = await axios(url)
+            const {data} = await axios(url)
             // console.log(response.data)
-            setMeals(response.data.meals)
+            if(data.meals) {
+                setMeals(data.meals)
+            }else {
+                setMeals([])
+            }
+            
             
         }catch(error) {
             console.log(error)
