@@ -5,7 +5,7 @@ import { FaHeart, FaRegHeart } from "react-icons/fa";
 
 
 const Meals = () => {
-    const {meals,loading,selectMeal,selectedMeal,addToFavorites, favorites} = useGlobalContext();
+    const {meals,loading,selectMeal,addToFavorites, favorites} = useGlobalContext();
    
     if(loading) {
         return <section className="section">

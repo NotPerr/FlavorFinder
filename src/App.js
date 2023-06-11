@@ -6,7 +6,7 @@ import Modal from './components/Modal';
 import Search from './components/Search';
 import { useGlobalContext } from './context';
 import FavoriteIndicator from './components/FavoriteIndicator';
-import { useState } from 'react';
+
 
 function App() {
 
@@ -18,7 +18,7 @@ function App() {
       <header>
         <FavoriteIndicator />
         <Search />
-        {showFavorite && <Favorites />}
+        {(showFavorite && favorites.length >= 1)&& <Favorites />}
       </header>
       
       

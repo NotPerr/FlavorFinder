@@ -228,7 +228,7 @@ ul {
   transition:var(--transition);
 }
 .remove-btn:hover{
-  color:var(--red-dark)
+  color: var(--primary-200);
 }
 /* Meals */
 .section,.section-center{
