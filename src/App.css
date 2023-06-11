@@ -337,3 +337,47 @@ cursor:pointer;
   background:var(--red-dark);
   color:var(--white);
 }
+/* favorite indicator */
+.favorite-indicator {
+  font-size: 2rem;
+}
+.header-favorite {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+  padding-left:1.5rem;
+  padding-right: 1.5rem;
+}
+.header-logo {
+  font-size: 1.8rem;
+  margin: 0;
+  
+}
+.indicator-container {
+  position: relative;
+}
+.favorites-num {
+  position: absolute;
+  top: -18px;
+  right: -15px;
+  background: var(--primary-200);
+  border-radius: 50%;
+  width: 1.6rem;
+  height: 1.6rem;
+  text-align: center;
+}
+
+header {
+  position: fixed;
+  width: 100vw;
+  top:0;
+}
+main {
+  position: relative;
+}
+
+.section-center {
+  margin-top: 8rem;
+}
+

@@ -24,6 +24,7 @@ const AppProvider = ({ children }) => {
     const [showModal, setShowModal] = useState(false);
     const [selectedMeal,setSelectedMeal] = useState(null);
     const [favorites, setFavorites] = useState(getFavoritesFromLocalStorage());
+    const [showFavorite, setShowFavorite] = useState(false);
 
     const fetchMeals = async (url) => {
         setLoading(true);
@@ -78,12 +79,16 @@ const AppProvider = ({ children }) => {
 
     const addToFavorites = (idMeal) => {
         const alreadyFavorite = favorites.find((meal) => meal.idMeal === idMeal);
-        if(alreadyFavorite) return
-        // add to favorites
+        if(alreadyFavorite) {
+            removeFromFavorites(idMeal)
+        }else {
+            // add to favorites
         const meal = meals.find((meal) => meal.idMeal === idMeal);
         const updatedFavorites = [...favorites, meal];
         setFavorites(updatedFavorites);
         localStorage.setItem('favorites',JSON.stringify(updatedFavorites));
+        }
+        
     }
 
     const removeFromFavorites = (idMeal) => {
@@ -92,10 +97,14 @@ const AppProvider = ({ children }) => {
         localStorage.setItem('favorites',JSON.stringify(updatedFavorites));
     }
 
+    const toggleShowFavorite = () => {
+        setShowFavorite(pre=>!pre);
+    }
+
   return (
     <AppContext.Provider
       value={{loading,meals,setSearchTerm,fetchRandomMeal,showModal,selectedMeal,selectMeal,closeModal
-      ,addToFavorites,removeFromFavorites,favorites}}>
+      ,addToFavorites,removeFromFavorites,favorites,showFavorite, setShowFavorite,toggleShowFavorite}}>
       {children}
     </AppContext.Provider>
   )

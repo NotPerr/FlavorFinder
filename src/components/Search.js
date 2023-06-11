@@ -21,12 +21,12 @@ const Search = () => {
         fetchRandomMeal();
     }
 
-    return <header className="search-container">
+    return <div className="search-container">
         <form onSubmit={handleSubmit}>
             <input type='text' placeholder="search a meal"  value={text} onChange={handleChange} className="form-input" />
             <button type='submit' className="btn">search</button>
             <button type='button' className="btn btn-hipster" onClick={handleRandomMeal}>surprise me!</button>
         </form>
-    </header>
+    </div>
   }
   export default Search;
