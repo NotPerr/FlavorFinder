@@ -6,6 +6,7 @@ import Modal from './components/Modal';
 import Search from './components/Search';
 import { useGlobalContext } from './context';
 import FavoriteIndicator from './components/FavoriteIndicator';
+import Hero from './components/Hero';
 
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
         {(showFavorite && favorites.length >= 1)&& <Favorites />}
       </header>
       
-      
+      <Hero />
       
       <Meals />
       { showModal && <Modal /> }

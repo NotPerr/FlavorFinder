@@ -377,7 +377,36 @@ main {
   position: relative;
 }
 
-.section-center {
-  margin-top: 8rem;
+.hero-section {
+  margin-top: 12rem;
 }
 
+.hero-img {
+  width: 10rem;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.description {
+  text-align: center;
+  margin: 0 2rem;
+}
+
+.hero-title {
+  font-size: 3rem;
+}
+
+@media screen and (min-width: 700px) {
+  .hero-section {
+    display:flex;
+    padding: 3rem;
+  }
+  .hero-img {
+    width: 15rem;
+  }
+  .description {
+    display: flex;
+    place-items: center;
+  }
+}
