@@ -18,9 +18,9 @@ FlavorFinder is a web application that allows users to search for recipes and sa
 
 ![](./screenshot.jpg)
 
+
 ### Links
 
-- Solution URL: [here](https://www.frontendmentor.io/solutions/responsive-url-shortening-landing-page-made-with-react-and-tailwind-617VTvfrcZ)
 - Live Site URL: [here](https://647d6b9c33068028382c9834--dynamic-taffy-271018.netlify.app/)
 
 ## My process
