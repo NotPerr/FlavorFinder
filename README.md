@@ -21,7 +21,7 @@ FlavorFinder is a web application that allows users to search for recipes and sa
 
 ### Links
 
-- Live Site URL: [here](https://647d6b9c33068028382c9834--dynamic-taffy-271018.netlify.app/)
+- Live Site URL: [here](https://6486c1fb8c6c5218f9e5bd52--venerable-malabi-8e2b41.netlify.app/)
 
 ## My process
 
@@ -32,10 +32,9 @@ FlavorFinder is a web application that allows users to search for recipes and sa
 - Flexbox
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [Tailwind CSS](https://tailwindcss.com/) - For styles
+- [TheMealDB API](https://www.themealdb.com/api.php)
 
 
 ## Author
 
-- Frontend Mentor - [@NotPerr](https://www.frontendmentor.io/profile/NotPerr)
 - Twitter - [@NotPerry8811](https://www.twitter.com/NotPerry8811)
