@@ -1,6 +1,6 @@
-# FlavorFinder
+# Receita Boa
 
-FlavorFinder is a web application that allows users to search for recipes and save their favorite recipes to a personalized favorite list.
+Receita Boa is a web application that allows users to search for recipes and save their favorite recipes to a personalized favorite list.
 
 ## Table of contents
 

@@ -9,8 +9,8 @@ const Hero = () => {
             
             <div className='description'>
                 <div>
-                    <h1 className='hero-title'>FlavorFinder</h1>
-                    <p>Welcome to FlavorFinder, your go-to destination for finding and saving incredible recipes.</p>
+                    <h1 className='hero-title'>Receita Boa</h1>
+                    <p>Welcome to Receita Boa, your go-to destination for finding and saving incredible recipes.</p>
                 </div>
             </div>
         </section>

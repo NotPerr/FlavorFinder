@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { AppProvider } from './context';
+import analytics from './firabaseSdk';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

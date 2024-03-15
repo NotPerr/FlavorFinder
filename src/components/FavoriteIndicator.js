@@ -5,7 +5,7 @@ const FavoriteIndicator = () => {
     const {favorites, toggleShowFavorite} = useGlobalContext();
     return (
         <div className="header-favorite">
-            <h1 className="header-logo">FlavorFinder</h1>
+            <h1 className="header-logo">Receita Boa</h1>
             <div className="indicator-container">
                 <BsBookmarkHeart className="favorite-indicator" onClick={toggleShowFavorite}/>
                 <div className="favorites-num">
